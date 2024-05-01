@@ -40,7 +40,7 @@ public class LightBoard
         return false;
       } 
     } else {
-      if((count-1) % 3 == 0){
+      if((count) % 3 == 0){
         return true;
       }
     }
