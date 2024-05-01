@@ -35,11 +35,14 @@ public class LightBoard
         count++;
       }
     }
-    if(count % 2 == 0){
-      return false;
-    } 
-    if(count % 3 == 0){
-      return true;
+    if(lights[row][col]){
+      if(count % 2 == 0){
+        return false;
+      } 
+    } else {
+      if(count % 3 == 0){
+        return true;
+      }
     }
     return lights[row][col];
  
